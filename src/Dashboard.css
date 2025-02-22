@@ -1,0 +1,109 @@
+/* src/pages/Dashboard.css */
+
+.dashboard-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #8f70ff, #efc3ff);
+  font-family: sans-serif;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero-content button {
+  background-color: #4d2871;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.hero-content button:hover {
+  background-color: #3a1f5c;
+}
+
+/* Features Section */
+.features-section {
+  background-color: #fff;
+  color: #333;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.features-section h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #4d2871;
+}
+
+.features-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.feature-box {
+  background-color: #f8f3ff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  text-decoration: none; /* remove link underline */
+  color: #333;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.feature-box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.feature-box h3 {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  color: #4d2871;
+}
+
+.feature-box p {
+  margin: 0;
+}
+
+/* Footer is imported from Footer.js, see Footer.css for styling */
+.feature-box img {
+  width: 100%; /* Adjust width if necessary */
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.dashboard {
+  transition: filter 0.3s ease-in-out;
+}
+
+.dashboard.blurred {
+  filter: blur(5px);
+}
