@@ -1,0 +1,361 @@
+Date,Amount,Debit/Credit,Name,Category,Latitude,Longitude,Bank Balance
+04-01-2025,83,Debit,Costco,Groceries,38.0922,-93.3464,9917
+05-01-2025,122,Debit,Amazon,Shopping,40.3724,-95.1406,9795
+06-01-2025,19,Debit,T&G,Dining Out,47.7052,-103.0656,9776
+06-01-2025,88,Debit,Target,Groceries,36.3401,-91.3435,9688
+06-01-2025,29,Debit,Chikfile,Dining Out,49.0688,-103.9082,9659
+07-01-2025,14,Debit,Tindrum,Dining Out,44.7891,-99.9031,9645
+07-01-2025,105,Debit,Mall,Shopping,42.7458,-97.8777,9540
+08-01-2025,1028,Debit,Electricity,Flat,29.9588,-84.5531,8512
+10-01-2025,87,Debit,Krishna,Groceries,38.5729,-93.6582,8425
+12-01-2025,60,Debit,Costco,Groceries,37.8748,-92.5744,8365
+12-01-2025,125,Debit,Wifi,Flat,30.7842,-86.0339,8240
+12-01-2025,78,Debit,Gas,Flat,32.4289,-86.5138,8162
+13-01-2025,47,Debit,Tacobell,Dining Out,46.9538,-102.136,8115
+14-01-2025,27,Debit,Bowling,Entertainment,50.9818,-106.2187,8088
+15-01-2025,17,Debit,Kroger,Groceries,34.8737,-89.8615,8071
+15-01-2025,10,Debit,Kroger,Groceries,35.23,-89.731,8061
+16-01-2025,55,Debit,Burlington,Shopping,41.0531,-96.0987,8006
+17-01-2025,57,Debit,Movie,Entertainment,50.3733,-105.2943,7949
+17-01-2025,66,Debit,Burlington,Shopping,41.131,-96.3385,7883
+17-01-2025,366,Debit,Wifi,Flat,30.6804,-85.8175,7517
+18-01-2025,877,Debit,Gas,Flat,31.6077,-86.5386,6640
+18-01-2025,8,Debit,MCD,Dining Out,46.1383,-100.8845,6632
+19-01-2025,42,Debit,Cricket,Entertainment,53.475,-108.2766,6590
+20-01-2025,69,Debit,Target,Groceries,35.7814,-90.601,6521
+20-01-2025,464,Debit,Gas,Flat,32.0104,-86.7485,6057
+21-01-2025,36,Debit,Tacobell,Dining Out,46.983,-101.7821,6021
+22-01-2025,7,Debit,Chikfile,Dining Out,48.7045,-104.1198,6014
+22-01-2025,1174,Debit,Electricity,Flat,30.182,-85.3131,4840
+23-01-2025,14,Debit,T&G,Dining Out,47.8511,-102.5622,4826
+25-01-2025,1395,Debit,Utilities,Flat,32.9271,-88.4308,3431
+25-01-2025,102,Debit,Burlington,Shopping,40.614,-95.9778,3329
+26-01-2025,1317,Debit,Rent,Flat,33.8192,-89.3883,2012
+26-01-2025,24,Debit,Walmart,Groceries,36.9569,-91.5809,1988
+27-01-2025,160,Debit,Gas,Flat,31.7049,-87.1595,1828
+27-01-2025,38,Debit,Krishna,Groceries,39.2063,-94.3359,1790
+28-01-2025,18,Debit,Golf,Entertainment,54.0558,-109.3746,1772
+28-01-2025,413,Debit,Electricity,Flat,29.9638,-84.6231,1359
+29-01-2025,21,Debit,Walmart,Groceries,37.092,-91.8502,1338
+31-01-2025,78,Debit,Walmart,Groceries,37.2289,-91.6351,1260
+31-01-2025,97,Debit,Amazon,Shopping,40.0392,-94.8511,1163
+31-01-2025,5000,Credit,Salary,Salary,0,0,6163
+02-02-2025,134,Debit,Burlington,Shopping,40.6775,-95.6442,6029
+02-02-2025,132,Debit,Electricity,Flat,30.3125,-84.6976,5897
+03-02-2025,141,Debit,Ross,Shopping,41.9403,-96.5657,5756
+03-02-2025,63,Debit,Kroger,Groceries,34.5015,-89.6689,5693
+04-02-2025,29,Debit,Tindrum,Dining Out,45.1862,-99.8618,5664
+04-02-2025,64,Debit,Kate Spade,Shopping,44.3362,-98.682,5600
+05-02-2025,199,Debit,Electricity,Flat,29.6778,-85.1123,5401
+05-02-2025,112,Debit,Kate Spade,Shopping,44.1543,-99.1395,5289
+06-02-2025,45,Debit,Bowling,Entertainment,50.6114,-106.3248,5244
+08-02-2025,35,Debit,Movie,Entertainment,49.6284,-105.3524,5209
+08-02-2025,48,Debit,Tacobell,Dining Out,46.821,-101.7463,5161
+09-02-2025,348,Debit,Gas,Flat,31.6381,-86.6282,4813
+09-02-2025,94,Debit,Kate Spade,Shopping,43.8561,-99.4204,4719
+10-02-2025,19,Debit,Bowling,Entertainment,51.4298,-105.916,4700
+10-02-2025,66,Debit,Costco,Groceries,37.7756,-92.5236,4634
+12-02-2025,45,Debit,Golf,Entertainment,53.7999,-109.1647,4589
+13-02-2025,50,Debit,T&G,Dining Out,48.3163,-103.2723,4539
+14-02-2025,14,Debit,Tacobell,Dining Out,47.0522,-101.8436,4525
+15-02-2025,150,Debit,Burlington,Shopping,41.023,-96.3094,4375
+16-02-2025,471,Debit,Gas,Flat,32.3326,-86.6994,3904
+18-02-2025,516,Debit,Rent,Flat,33.9986,-89.2976,3388
+18-02-2025,61,Debit,Costco,Groceries,38.2059,-92.9999,3327
+19-02-2025,135,Debit,Amazon,Shopping,39.7877,-94.8355,3192
+21-02-2025,79,Debit,Amazon,Shopping,40.0946,-95.1697,3113
+24-02-2025,281,Debit,Gas,Flat,32.3256,-87.3656,2832
+25-02-2025,12,Debit,Bowling,Entertainment,51.4278,-105.6437,2820
+26-02-2025,46,Debit,Amazon,Shopping,40.1121,-95.1648,2774
+27-02-2025,26,Debit,Bowling,Entertainment,51.1391,-106.0414,2748
+27-02-2025,1340,Debit,Gas,Flat,32.4143,-86.5204,1408
+27-02-2025,43,Debit,Kroger,Groceries,34.6392,-89.6313,1365
+27-02-2025,23,Debit,Tindrum,Dining Out,44.5297,-100.4772,1342
+28-02-2025,26,Debit,Movie,Entertainment,50.1728,-105.4249,1316
+28-02-2025,52,Debit,Walmart,Groceries,37.0006,-91.9925,1264
+28-02-2025,5000,Credit,Salary,Salary,0,0,6264
+01-03-2025,49,Debit,Tacobell,Dining Out,46.5732,-101.7337,6215
+01-03-2025,46,Debit,Cricket,Entertainment,52.9907,-108.0628,6169
+01-03-2025,178,Debit,Utilities,Flat,32.8294,-87.5504,5991
+01-03-2025,1491,Debit,Utilities,Flat,32.9272,-87.6542,4500
+01-03-2025,127,Debit,Mall,Shopping,42.6166,-98.2944,4373
+02-03-2025,46,Debit,Target,Groceries,35.8833,-91.0571,4327
+04-03-2025,81,Debit,Kate Spade,Shopping,44.1372,-98.7542,4246
+04-03-2025,100,Debit,Costco,Groceries,37.8083,-92.85,4146
+04-03-2025,138,Debit,Kate Spade,Shopping,43.7507,-98.8495,4008
+05-03-2025,22,Debit,T&G,Dining Out,48.4238,-103.0943,3986
+05-03-2025,26,Debit,MCD,Dining Out,46.0253,-100.9716,3960
+06-03-2025,64,Debit,Walmart,Groceries,36.9484,-92.4888,3896
+07-03-2025,59,Debit,Amazon,Shopping,40.126,-94.7499,3837
+11-03-2025,49,Debit,Cricket,Entertainment,52.7682,-107.586,3788
+11-03-2025,87,Debit,Costco,Groceries,38.2527,-93.1809,3701
+12-03-2025,20,Debit,Movie,Entertainment,50.021,-104.556,3681
+12-03-2025,50,Debit,Kroger,Groceries,34.8684,-89.6791,3631
+13-03-2025,433,Debit,Electricity,Flat,30.3051,-84.6639,3198
+14-03-2025,36,Debit,T&G,Dining Out,47.9272,-103.0956,3162
+14-03-2025,240,Debit,Gas,Flat,32.2412,-86.9323,2922
+17-03-2025,86,Debit,Burlington,Shopping,40.7391,-95.5788,2836
+17-03-2025,37,Debit,Golf,Entertainment,53.9627,-109.1218,2799
+17-03-2025,135,Debit,Amazon,Shopping,40.4327,-94.614,2664
+18-03-2025,1229,Debit,Wifi,Flat,30.8552,-86.4345,1435
+18-03-2025,112,Debit,Amazon,Shopping,39.8227,-95.2472,1323
+19-03-2025,626,Debit,Rent,Flat,33.8295,-88.8032,697
+19-03-2025,165,Debit,Wifi,Flat,31.1516,-86.0208,532
+19-03-2025,13,Debit,Costco,Groceries,38.021,-92.9844,519
+20-03-2025,27,Debit,Kroger,Groceries,35.0275,-90.3389,492
+20-03-2025,99,Debit,Costco,Groceries,38.4289,-93.3473,393
+22-03-2025,261,Debit,Electricity,Flat,29.6395,-84.5645,132
+23-03-2025,126,Debit,Rent,Flat,33.8309,-88.9956,6
+25-03-2025,6,Debit,Kate Spade,Shopping,44.0929,-99.242,0
+31-03-2025,5000,Credit,Salary,Salary,0,0,5000
+01-04-2025,1005,Debit,Electricity,Flat,29.9314,-85.0416,3995
+02-04-2025,1226,Debit,Rent,Flat,34.1963,-89.3197,2769
+02-04-2025,987,Debit,Utilities,Flat,33.0823,-87.7381,1782
+04-04-2025,1255,Debit,Electricity,Flat,29.8526,-85.3069,527
+05-04-2025,456,Debit,Rent,Flat,33.7973,-89.2068,71
+06-04-2025,27,Debit,Burlington,Shopping,41.2697,-96.2904,44
+06-04-2025,16,Debit,Kroger,Groceries,34.7918,-90.1421,28
+07-04-2025,22,Debit,Kroger,Groceries,35.1043,-89.882,6
+07-04-2025,6,Debit,Electricity,Flat,29.772,-85.175,0
+30-04-2025,5000,Credit,Salary,Salary,0,0,5000
+01-05-2025,43,Debit,Krishna,Groceries,38.5414,-93.5163,4957
+01-05-2025,11,Debit,Walmart,Groceries,36.5433,-92.2105,4946
+03-05-2025,53,Debit,Krishna,Groceries,38.6782,-93.7368,4893
+04-05-2025,6,Debit,Bowling,Entertainment,50.9837,-106.4406,4887
+04-05-2025,40,Debit,Bowling,Entertainment,50.9857,-106.2745,4847
+08-05-2025,897,Debit,Electricity,Flat,29.8086,-84.8305,3950
+08-05-2025,24,Debit,Target,Groceries,36.0775,-91.0869,3926
+10-05-2025,48,Debit,Tacobell,Dining Out,46.5452,-102.0762,3878
+10-05-2025,102,Debit,Kate Spade,Shopping,44.3152,-99.3806,3776
+11-05-2025,1219,Debit,Electricity,Flat,29.7825,-84.717,2557
+13-05-2025,45,Debit,Chikfile,Dining Out,49.3605,-103.9168,2512
+14-05-2025,13,Debit,Cricket,Entertainment,53.1911,-108.3693,2499
+15-05-2025,48,Debit,Golf,Entertainment,54.428,-109.0692,2451
+15-05-2025,5,Debit,Netflix,Entertainment,52.4245,-106.5106,2446
+16-05-2025,79,Debit,Walmart,Groceries,36.8648,-91.9472,2367
+17-05-2025,31,Debit,Amazon,Shopping,40.3947,-95.453,2336
+18-05-2025,6,Debit,Tindrum,Dining Out,44.6815,-100.3623,2330
+18-05-2025,78,Debit,Kroger,Groceries,34.7975,-90.4797,2252
+18-05-2025,8,Debit,Bowling,Entertainment,50.5543,-106.0082,2244
+18-05-2025,914,Debit,Electricity,Flat,30.1335,-84.8767,1330
+19-05-2025,80,Debit,Krishna,Groceries,38.9922,-94.3358,1250
+19-05-2025,52,Debit,Golf,Entertainment,54.4907,-109.3587,1198
+20-05-2025,1055,Debit,Rent,Flat,33.7755,-89.2128,143
+21-05-2025,123,Debit,Ross,Shopping,42.3853,-97.1008,20
+22-05-2025,9,Debit,MCD,Dining Out,46.1344,-101.3996,11
+22-05-2025,6,Debit,T&G,Dining Out,48.0564,-103.0398,5
+23-05-2025,5,Debit,Rent,Flat,34.2888,-89.2106,0
+31-05-2025,5000,Credit,Salary,Salary,0,0,5000
+01-06-2025,26,Debit,Mall,Shopping,43.1267,-97.5883,4974
+01-06-2025,49,Debit,Kroger,Groceries,35.1077,-89.7635,4925
+01-06-2025,1399,Debit,Rent,Flat,34.3321,-89.2788,3526
+03-06-2025,1021,Debit,Utilities,Flat,32.9291,-88.4409,2505
+03-06-2025,9,Debit,T&G,Dining Out,47.9773,-102.9644,2496
+03-06-2025,860,Debit,Rent,Flat,33.7456,-88.903,1636
+04-06-2025,196,Debit,Wifi,Flat,30.7867,-85.8624,1440
+05-06-2025,266,Debit,Gas,Flat,31.7699,-87.0101,1174
+05-06-2025,276,Debit,Utilities,Flat,32.767,-87.7649,898
+06-06-2025,19,Debit,Target,Groceries,35.6628,-90.9338,879
+07-06-2025,19,Debit,MCD,Dining Out,45.6884,-101.3142,860
+08-06-2025,42,Debit,Tacobell,Dining Out,47.4564,-102.3794,818
+08-06-2025,82,Debit,Walmart,Groceries,37.1498,-92.3632,736
+09-06-2025,139,Debit,Kate Spade,Shopping,43.6744,-98.9389,597
+09-06-2025,14,Debit,Krishna,Groceries,39.0971,-94.2651,583
+10-06-2025,30,Debit,Tacobell,Dining Out,46.5895,-102.0748,553
+11-06-2025,11,Debit,MCD,Dining Out,45.5272,-101.2661,542
+12-06-2025,16,Debit,Cricket,Entertainment,53.1955,-108.2776,526
+14-06-2025,26,Debit,Kroger,Groceries,35.0401,-90.1856,500
+14-06-2025,57,Debit,Bowling,Entertainment,51.3677,-106.0208,443
+16-06-2025,18,Debit,Kroger,Groceries,34.9462,-90.4602,425
+16-06-2025,7,Debit,Tacobell,Dining Out,47.2666,-102.1,418
+17-06-2025,324,Debit,Gas,Flat,32.0188,-86.9187,94
+17-06-2025,66,Debit,Walmart,Groceries,36.6188,-92.4185,28
+18-06-2025,15,Debit,Bowling,Entertainment,50.5164,-105.8534,13
+19-06-2025,13,Debit,Wifi,Flat,30.8973,-85.5134,0
+30-06-2025,5000,Credit,Salary,Salary,0,0,5000
+01-07-2025,266,Debit,Wifi,Flat,31.1921,-86.3614,4734
+02-07-2025,847,Debit,Utilities,Flat,32.8297,-88.0073,3887
+02-07-2025,16,Debit,Target,Groceries,35.7159,-90.6412,3871
+03-07-2025,104,Debit,Amazon,Shopping,40.4967,-94.8936,3767
+03-07-2025,68,Debit,Amazon,Shopping,40.1476,-95.0466,3699
+04-07-2025,19,Debit,Tacobell,Dining Out,47.0568,-102.2761,3680
+05-07-2025,1390,Debit,Utilities,Flat,32.6272,-87.571,2290
+05-07-2025,44,Debit,Chikfile,Dining Out,49.4808,-104.1535,2246
+06-07-2025,16,Debit,Krishna,Groceries,39.0639,-94.4282,2230
+06-07-2025,822,Debit,Wifi,Flat,30.9063,-86.3536,1408
+07-07-2025,10,Debit,Chikfile,Dining Out,48.506,-104.3632,1398
+07-07-2025,25,Debit,Movie,Entertainment,49.793,-104.7886,1373
+07-07-2025,44,Debit,Chikfile,Dining Out,48.6979,-103.842,1329
+09-07-2025,138,Debit,Gas,Flat,31.6983,-86.9222,1191
+09-07-2025,25,Debit,Krishna,Groceries,38.8512,-93.6869,1166
+11-07-2025,94,Debit,Burlington,Shopping,41.3288,-96.0618,1072
+12-07-2025,395,Debit,Utilities,Flat,32.7439,-87.6438,677
+12-07-2025,259,Debit,Wifi,Flat,31.1036,-86.465,418
+12-07-2025,39,Debit,Netflix,Entertainment,52.459,-107.4952,379
+13-07-2025,351,Debit,Utilities,Flat,33.3703,-87.6965,28
+13-07-2025,28,Debit,Gas,Flat,31.6114,-86.571,0
+31-07-2025,5000,Credit,Salary,Salary,0,0,5000
+03-08-2025,18,Debit,Chikfile,Dining Out,49.1056,-103.6626,4982
+03-08-2025,76,Debit,Utilities,Flat,32.7025,-87.7235,4906
+04-08-2025,149,Debit,Amazon,Shopping,39.8855,-94.7835,4757
+04-08-2025,31,Debit,Kroger,Groceries,34.706,-90.3054,4726
+07-08-2025,44,Debit,Amazon,Shopping,40.1709,-95.0106,4682
+07-08-2025,12,Debit,T&G,Dining Out,48.3323,-102.8489,4670
+07-08-2025,9,Debit,Cricket,Entertainment,52.5396,-108.1159,4661
+07-08-2025,34,Debit,Bowling,Entertainment,51.2719,-105.5405,4627
+08-08-2025,104,Debit,Ross,Shopping,42.3437,-97.4839,4523
+09-08-2025,45,Debit,Amazon,Shopping,39.6064,-94.6036,4478
+09-08-2025,20,Debit,Burlington,Shopping,40.5891,-95.5807,4458
+10-08-2025,49,Debit,Amazon,Shopping,39.7836,-94.8546,4409
+10-08-2025,47,Debit,Netflix,Entertainment,52.1987,-107.1537,4362
+11-08-2025,11,Debit,Chikfile,Dining Out,48.6244,-104.2046,4351
+11-08-2025,58,Debit,Ross,Shopping,42.3751,-97.2756,4293
+13-08-2025,44,Debit,Target,Groceries,36.252,-91.44,4249
+14-08-2025,27,Debit,T&G,Dining Out,47.5974,-103.49,4222
+14-08-2025,21,Debit,Cricket,Entertainment,53.2078,-108.305,4201
+15-08-2025,44,Debit,Target,Groceries,36.0132,-90.5061,4157
+15-08-2025,653,Debit,Wifi,Flat,31.3152,-85.8963,3504
+15-08-2025,40,Debit,Bowling,Entertainment,50.5453,-106.1239,3464
+16-08-2025,76,Debit,Mall,Shopping,43.3685,-98.0807,3388
+17-08-2025,142,Debit,Utilities,Flat,33.0538,-88.4181,3246
+20-08-2025,916,Debit,Wifi,Flat,31.4377,-85.5278,2330
+21-08-2025,48,Debit,Bowling,Entertainment,50.7784,-105.6789,2282
+23-08-2025,39,Debit,T&G,Dining Out,48.1571,-103.3488,2243
+23-08-2025,1065,Debit,Electricity,Flat,29.8326,-85.4572,1178
+24-08-2025,43,Debit,Cricket,Entertainment,52.6561,-108.4077,1135
+24-08-2025,37,Debit,Movie,Entertainment,49.8172,-104.5674,1098
+24-08-2025,16,Debit,Chikfile,Dining Out,49.3672,-104.0109,1082
+25-08-2025,77,Debit,Burlington,Shopping,40.9195,-95.9529,1005
+29-08-2025,40,Debit,Tindrum,Dining Out,45.3623,-100.41,965
+31-08-2025,430,Debit,Rent,Flat,34.0473,-88.8182,535
+31-08-2025,40,Debit,Tacobell,Dining Out,47.3161,-102.1072,495
+31-08-2025,5000,Credit,Salary,Salary,0,0,5495
+01-09-2025,19,Debit,T&G,Dining Out,47.5834,-103.1178,5476
+01-09-2025,72,Debit,Ross,Shopping,41.8641,-96.9066,5404
+03-09-2025,18,Debit,Walmart,Groceries,36.6545,-92.0629,5386
+03-09-2025,38,Debit,Netflix,Entertainment,52.3602,-107.2137,5348
+05-09-2025,7,Debit,Chikfile,Dining Out,48.8456,-104.0981,5341
+06-09-2025,22,Debit,Tindrum,Dining Out,44.9006,-100.095,5319
+07-09-2025,58,Debit,Ross,Shopping,42.0574,-97.2481,5261
+08-09-2025,79,Debit,Wifi,Flat,31.2694,-85.7161,5182
+08-09-2025,30,Debit,Netflix,Entertainment,52.0587,-106.7997,5152
+08-09-2025,79,Debit,Kate Spade,Shopping,43.6822,-98.6342,5073
+10-09-2025,1220,Debit,Utilities,Flat,33.0809,-87.9661,3853
+11-09-2025,28,Debit,Golf,Entertainment,54.2565,-109.4755,3825
+11-09-2025,17,Debit,Golf,Entertainment,54.3006,-108.7286,3808
+12-09-2025,27,Debit,Kroger,Groceries,35.3383,-90.36,3781
+12-09-2025,189,Debit,Wifi,Flat,30.6566,-85.5838,3592
+12-09-2025,31,Debit,Bowling,Entertainment,50.8395,-105.5829,3561
+14-09-2025,124,Debit,Rent,Flat,33.5423,-88.7282,3437
+15-09-2025,144,Debit,Kate Spade,Shopping,44.0614,-99.3668,3293
+15-09-2025,1012,Debit,Wifi,Flat,31.2677,-86.1903,2281
+16-09-2025,20,Debit,T&G,Dining Out,47.7161,-103.4097,2261
+16-09-2025,79,Debit,Costco,Groceries,38.3157,-92.7599,2182
+17-09-2025,933,Debit,Rent,Flat,33.6179,-89.4549,1249
+17-09-2025,31,Debit,Tindrum,Dining Out,44.7916,-99.9728,1218
+17-09-2025,77,Debit,Walmart,Groceries,37.1218,-92.3304,1141
+18-09-2025,699,Debit,Electricity,Flat,29.5645,-84.6667,442
+18-09-2025,38,Debit,Kroger,Groceries,34.9968,-90.3441,404
+18-09-2025,78,Debit,Krishna,Groceries,39.3501,-93.5897,326
+19-09-2025,90,Debit,Costco,Groceries,37.8195,-92.6248,236
+20-09-2025,104,Debit,Wifi,Flat,30.8233,-86.2688,132
+20-09-2025,36,Debit,Amazon,Shopping,40.2233,-95.3287,96
+21-09-2025,8,Debit,Tindrum,Dining Out,44.941,-99.6429,88
+22-09-2025,67,Debit,Gas,Flat,32.2361,-86.8694,21
+23-09-2025,20,Debit,Kate Spade,Shopping,44.4715,-98.7913,1
+23-09-2025,1,Debit,Amazon,Shopping,39.6977,-95.38,0
+30-09-2025,5000,Credit,Salary,Salary,0,0,5000
+01-10-2025,10,Debit,Costco,Groceries,37.7193,-92.9123,4990
+02-10-2025,1426,Debit,Gas,Flat,32.0856,-86.5192,3564
+02-10-2025,15,Debit,Tacobell,Dining Out,47.1402,-102.3981,3549
+03-10-2025,40,Debit,Tacobell,Dining Out,46.8428,-102.1931,3509
+03-10-2025,26,Debit,Netflix,Entertainment,51.6978,-107.1843,3483
+04-10-2025,18,Debit,Kroger,Groceries,35.022,-90.3112,3465
+05-10-2025,94,Debit,Target,Groceries,36.0034,-91.3518,3371
+06-10-2025,44,Debit,Movie,Entertainment,49.5739,-105.2713,3327
+07-10-2025,15,Debit,Tindrum,Dining Out,44.5909,-100.4739,3312
+09-10-2025,24,Debit,T&G,Dining Out,48.4375,-103.4129,3288
+10-10-2025,22,Debit,Mall,Shopping,42.7707,-97.6166,3266
+13-10-2025,48,Debit,MCD,Dining Out,45.673,-100.8527,3218
+14-10-2025,79,Debit,Kroger,Groceries,35.3342,-89.8252,3139
+16-10-2025,478,Debit,Rent,Flat,34.2947,-88.7244,2661
+16-10-2025,1055,Debit,Electricity,Flat,30.4294,-85.3218,1606
+16-10-2025,161,Debit,Rent,Flat,33.602,-89.1218,1445
+16-10-2025,50,Debit,Golf,Entertainment,54.4842,-108.9923,1395
+18-10-2025,944,Debit,Electricity,Flat,30.27,-85.471,451
+18-10-2025,105,Debit,Rent,Flat,33.537,-88.9003,346
+18-10-2025,74,Debit,Walmart,Groceries,37.0121,-92.3892,272
+20-10-2025,22,Debit,MCD,Dining Out,46.1005,-100.9074,250
+20-10-2025,191,Debit,Utilities,Flat,33.2865,-88.1442,59
+21-10-2025,35,Debit,Golf,Entertainment,53.5118,-108.8917,24
+21-10-2025,11,Debit,Tacobell,Dining Out,47.0082,-102.3339,13
+22-10-2025,13,Debit,Wifi,Flat,31.421,-85.7456,0
+31-10-2025,5000,Credit,Salary,Salary,0,0,5000
+01-11-2025,49,Debit,Target,Groceries,35.7962,-91.2586,4951
+02-11-2025,56,Debit,Cricket,Entertainment,53.1358,-108.4898,4895
+02-11-2025,49,Debit,Krishna,Groceries,39.456,-94.1381,4846
+02-11-2025,40,Debit,Amazon,Shopping,40.1117,-94.6342,4806
+03-11-2025,22,Debit,Golf,Entertainment,54.1376,-108.5579,4784
+04-11-2025,38,Debit,Burlington,Shopping,40.5789,-95.8182,4746
+04-11-2025,981,Debit,Rent,Flat,34.0773,-89.232,3765
+04-11-2025,1044,Debit,Utilities,Flat,32.5062,-87.9802,2721
+05-11-2025,435,Debit,Gas,Flat,31.7789,-86.6537,2286
+05-11-2025,20,Debit,Tindrum,Dining Out,44.8946,-100.2111,2266
+06-11-2025,26,Debit,Tacobell,Dining Out,47.0947,-102.333,2240
+07-11-2025,51,Debit,Golf,Entertainment,53.7705,-108.7875,2189
+07-11-2025,20,Debit,T&G,Dining Out,47.9396,-103.063,2169
+10-11-2025,61,Debit,Kate Spade,Shopping,44.268,-99.1834,2108
+11-11-2025,624,Debit,Utilities,Flat,32.5154,-87.9887,1484
+12-11-2025,118,Debit,Amazon,Shopping,39.7605,-95.26,1366
+12-11-2025,429,Debit,Wifi,Flat,31.2915,-85.5431,937
+14-11-2025,97,Debit,Burlington,Shopping,40.8517,-95.822,840
+15-11-2025,16,Debit,Chikfile,Dining Out,49.0704,-104.2944,824
+15-11-2025,38,Debit,Netflix,Entertainment,52.1008,-107.4787,786
+16-11-2025,99,Debit,Kate Spade,Shopping,44.1334,-99.4535,687
+16-11-2025,18,Debit,MCD,Dining Out,45.9508,-100.6522,669
+17-11-2025,12,Debit,Costco,Groceries,38.4944,-92.8257,657
+18-11-2025,570,Debit,Utilities,Flat,33.4793,-87.5679,87
+19-11-2025,21,Debit,Netflix,Entertainment,51.8998,-106.9154,66
+19-11-2025,51,Debit,Kate Spade,Shopping,44.3177,-99.203,15
+20-11-2025,14,Debit,Walmart,Groceries,36.906,-91.8528,1
+21-11-2025,1,Debit,Costco,Groceries,37.9689,-93.3709,0
+30-11-2025,5000,Credit,Salary,Salary,0,0,5000
+01-12-2025,16,Debit,Target,Groceries,36.0859,-91.0501,4984
+01-12-2025,12,Debit,MCD,Dining Out,46.272,-100.8291,4972
+03-12-2025,869,Debit,Wifi,Flat,31.0817,-86.2063,4103
+04-12-2025,39,Debit,Golf,Entertainment,53.8276,-109.295,4064
+04-12-2025,496,Debit,Utilities,Flat,33.1838,-88.1033,3568
+06-12-2025,89,Debit,Krishna,Groceries,39.2087,-93.9709,3479
+06-12-2025,16,Debit,Golf,Entertainment,54.1852,-109.2062,3463
+08-12-2025,41,Debit,Walmart,Groceries,37.0381,-92.0865,3422
+08-12-2025,313,Debit,Rent,Flat,33.8693,-88.5042,3109
+09-12-2025,24,Debit,Kate Spade,Shopping,43.8542,-99.3082,3085
+11-12-2025,806,Debit,Rent,Flat,34.3187,-88.5353,2279
+11-12-2025,94,Debit,Costco,Groceries,38.409,-93.0064,2185
+12-12-2025,29,Debit,T&G,Dining Out,47.977,-102.9886,2156
+12-12-2025,36,Debit,Chikfile,Dining Out,48.9087,-103.6717,2120
+13-12-2025,379,Debit,Utilities,Flat,32.5163,-87.617,1741
+13-12-2025,11,Debit,Chikfile,Dining Out,49.2504,-104.0959,1730
+14-12-2025,45,Debit,Cricket,Entertainment,53.1363,-107.7699,1685
+14-12-2025,44,Debit,Netflix,Entertainment,51.5424,-107.2082,1641
+15-12-2025,67,Debit,Walmart,Groceries,37.1863,-91.8202,1574
+15-12-2025,48,Debit,Amazon,Shopping,40.38,-95.2598,1526
+18-12-2025,118,Debit,Burlington,Shopping,40.5659,-96.0594,1408
+18-12-2025,38,Debit,Ross,Shopping,41.7676,-97.3818,1370
+18-12-2025,43,Debit,Target,Groceries,36.214,-90.7877,1327
+19-12-2025,36,Debit,T&G,Dining Out,48.4925,-102.849,1291
+23-12-2025,39,Debit,Target,Groceries,36.3743,-91.4064,1252
+23-12-2025,718,Debit,Rent,Flat,34.4576,-88.9162,534
+23-12-2025,92,Debit,Wifi,Flat,31.3242,-85.8238,442
+23-12-2025,50,Debit,Burlington,Shopping,40.6429,-95.7093,392
+24-12-2025,52,Debit,Kroger,Groceries,34.7295,-89.8877,340
+25-12-2025,9,Debit,Netflix,Entertainment,52.3631,-107.1906,331
+25-12-2025,210,Debit,Electricity,Flat,29.6849,-84.8298,121
+26-12-2025,7,Debit,Chikfile,Dining Out,48.8454,-103.723,114
+26-12-2025,72,Debit,Gas,Flat,32.417,-86.7324,42
+26-12-2025,26,Debit,Cricket,Entertainment,53.1203,-108.1463,16
+28-12-2025,16,Debit,Tacobell,Dining Out,46.9894,-102.1186,0
+30-12-2025,5000,Credit,Salary,Salary,0,0,5000
+30-12-2025,,,,,,,
+30-12-2025,,,,,,,
+31-12-2025,,,,,,,
