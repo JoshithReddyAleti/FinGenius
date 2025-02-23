@@ -12,22 +12,42 @@ function LoginPage() {
     const [stocks, setStocks] = useState([]);
 
     useEffect(() => {
-        // Fetch news from your backend proxy
+        // Fetch global news using NewsAPI
         const fetchNews = async () => {
             try {
-                const newsResponse = await axios.get('http://localhost:5000/api/news');
+                const newsResponse = await axios.get('http://localhost:5000/api/news', {
+                    params: {
+                        country: 'us',
+                        category: 'business',
+                        apiKey: 'DREBB0YREWMQ00MR' // Replace with your NewsAPI key
+                    }
+                });
                 setNews(newsResponse.data.articles);
             } catch (error) {
                 console.error('Error fetching news:', error);
             }
         };
 
-        // Fetch stock data from your backend proxy
+        // Fetch real-time stock data from Alpha Vantage
         const fetchStocks = async () => {
             try {
-                const stocksResponse = await axios.get('http://localhost:5000/api/stocks');
-                const latestPrice = stocksResponse.data.latestPrice; // adjust based on your response structure
-                setStocks([{ name: 'AAPL', price: latestPrice }]);
+                const stocksResponse = await axios.get('http://localhost:5000/api/stocks', {
+                    params: {
+                        function: 'TIME_SERIES_INTRADAY',
+                        symbol: 'AAPL',
+                        interval: '5min',
+                        apikey: 'DREBB0YREWMQ00MR' // Replace with your Alpha Vantage API key
+                    }
+                });
+                const data = stocksResponse.data;
+                const timeSeries = data["Time Series (5min)"];
+                if (timeSeries) {
+                    const latestTime = Object.keys(timeSeries)[0];
+                    const latestPrice = timeSeries[latestTime]["4. close"];
+                    setStocks([{ name: 'AAPL', price: latestPrice }]);
+                } else {
+                    console.error('No time series data received:', data);
+                }
             } catch (error) {
                 console.error('Error fetching stock data:', error);
             }
@@ -39,18 +59,17 @@ function LoginPage() {
 
     const handleLogin = (e) => {
         e.preventDefault();
-        // Validate credentials (in a real application) then navigate
+        // Validate credentials then navigate to dashboard (dummy implementation)
         navigate('/dashboard', { state: { userName: 'User' } });
     };
 
     return (
         <div className="login-container">
-            {/* Dynamic content section */}
-            <div className="dynamic-content">
+            {/* Left side: News & Stock information */}
+            <div className="news-section">
                 <h1>Real Time FinTech Innovations of 2025</h1>
                 <h2>Global Economic Data & Real Time Stock Market Trends Today</h2>
-
-                <section className="news-section">
+                <section className="news-section-inner">
                     <h3>Top News Headlines</h3>
                     <ul>
                         {news.length > 0 ? (
@@ -66,7 +85,6 @@ function LoginPage() {
                         )}
                     </ul>
                 </section>
-
                 <section className="stocks-section">
                     <h3>Stock Market Trends</h3>
                     <ul>
@@ -83,8 +101,8 @@ function LoginPage() {
                 </section>
             </div>
 
-            {/* Login form section */}
-            <div className="login-form">
+            {/* Right side: Login form */}
+            <div className="form-section">
                 <div className="form-card">
                     <h2>Login</h2>
                     <form onSubmit={handleLogin}>

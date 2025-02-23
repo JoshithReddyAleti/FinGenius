@@ -1,0 +1,156 @@
+/* src/PayTransfer.css */
+
+.paytransfer-container {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 250px;
+  background: #2a0648;
+  color: #fff;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.nav-items {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.nav-items li {
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.nav-items li:hover {
+  color: #c23cde;
+}
+
+.search-box {
+  margin-top: 20px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Main content area */
+.main-content {
+  flex: 1;
+  padding: 40px;
+}
+
+/* Header section */
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.auth-actions a {
+  text-decoration: none;
+  color: #c23cde;
+  font-weight: bold;
+}
+
+.auth-actions a:hover {
+  text-decoration: underline;
+}
+
+/* Balance display */
+.balance-box {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Payment form card */
+.payment-form-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.payment-form-card h2 {
+  margin-top: 0;
+  color: #2a0648;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #2a0648;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+/* Button styling */
+.payment-form-card button {
+  width: 100%;
+  padding: 12px;
+  background: #c23cde;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.payment-form-card button:hover {
+  background: #a82bc5;
+}
+
+/* Recent activity list */
+.activity-list {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.activity-item {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.activity-item:last-child {
+  border-bottom: none;
+}
+
+.activity-item p {
+  margin: 5px 0;
+  color: #333;
+}

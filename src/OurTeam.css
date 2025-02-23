@@ -56,11 +56,11 @@
 
 /* Each team member card */
 .card {
-  position: relative;
   background-color: #4d2871;
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease;
+  text-align: center;
 }
 
 .card:hover {
@@ -72,17 +72,19 @@
   display: block;
   text-decoration: none;
   color: #fff;
-  position: relative;
 }
 
 /* Circular image container */
-.visual {
+.circle-container {
   width: 144px;
   height: 144px;
-  margin: 0 auto;
-  overflow: hidden;
   border-radius: 50%;
+  overflow: hidden;
   border: 2px solid #fff;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Image styling */
@@ -92,37 +94,41 @@
   object-fit: cover;
 }
 
-/* Tooltip styling (appears on hover) */
-.tooltiptext {
-  display: none;
+/* New hover info container (displayed below the cards) */
+.hover-info {
+  margin-top: 40px;
   background-color: #fff;
   color: #4d2871;
-  padding: 10px;
-  border-radius: 4px;
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
+  padding: 20px;
+  border-radius: 8px;
   text-align: center;
-  z-index: 10;
 }
 
-.avatar-link-wrapper:hover .tooltiptext {
-  display: block;
-}
-
-.team-name {
-  font-size: 1.25rem;
+.hover-info .team-name {
+  font-size: 1.75rem;
   font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hover-info .team-title {
+  font-size: 1.25rem;
   margin-bottom: 5px;
 }
 
-.team-title {
+.hover-info .team-bio {
   font-size: 1rem;
-  margin-bottom: 5px;
 }
 
-.team-bio {
-  font-size: 0.875rem;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 10px;
+  }
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+  .circle-container {
+    width: 120px;
+    height: 120px;
+  }
 }

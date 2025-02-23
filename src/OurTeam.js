@@ -1,10 +1,53 @@
 // src/OurTeam.js
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import './OurTeam.css';
 
+// Import team member images from assets folder
+import JoshithProfile from './assets/linkedin profile prof-1.png';
+import ManideepProfile from './assets/manideep_prof.png';
+import MathangProfile from './assets/mathang.jpg';
+import CharanProfile from './assets/charan_prof.png';
+
 function OurTeam() {
+    const [hoveredTeam, setHoveredTeam] = useState(null);
+
+    const teamMembers = [
+        {
+            id: 1,
+            name: "Joshith Reddy Aleti",
+            title: "React Developer & Data Engineer",
+            bio: "Passionate about crafting innovative digital solutions.",
+            image: JoshithProfile,
+            link: "https://www.linkedin.com/in/joshith-reddy-aleti/",
+        },
+        {
+            id: 2,
+            name: "Manideep Kalyanam",
+            title: "AI Engineer",
+            bio: "Developing robust applications with efficiency and passion.",
+            image: ManideepProfile,
+            link: "https://www.linkedin.com/in/manideep-kalyanam/",
+        },
+        {
+            id: 3,
+            name: "Mathang Peddi",
+            title: "ML Engineer",
+            bio: "Designing user-centric experiences with aesthetic finesse.",
+            image: MathangProfile,
+            link: "https://www.linkedin.com/in/mathangpeddi/",
+        },
+        {
+            id: 4,
+            name: "Charan",
+            title: "Backend Developer",
+            bio: "Ensuring projects are delivered on time with quality.",
+            image: CharanProfile,
+            link: "https://www.linkedin.com/in/kasanagottu-kumar/",
+        },
+    ];
+
     return (
         <>
             <Header />
@@ -19,140 +62,42 @@ function OurTeam() {
                             View All
                         </a>
                     </header>
-                    <ul className="cards" style={{ '--nth-siblings': 5 }}>
-                        <li className="card" style={{ '--nth-child': 1 }}>
-                            <a href="#" className="avatar-link-wrapper">
-                                <div className="visual">
-                                    <img
-                                        className="avatar-img"
-                                        src="https://raw.githubusercontent.com/mobalti/modern-web-ui/refs/heads/main/css-trig-functions/images/img-1.avif"
-                                        width="144"
-                                        height="144"
-                                        alt="Ethan B., DevOps Engineer"
-                                    />
-                                </div>
-                                <div className="tooltiptext">
-                                    <h3 className="team-name">Ethan B.</h3>
-                                    <div className="team-content-wrapper">
-                                        <p className="team-title">DevOps Engineer</p>
-                                        <p className="team-bio">
-                                            Master of servers, pipelines, and keeping things running smoothly.
-                                        </p>
+                    <ul className="cards" style={{ '--nth-siblings': 4 }}>
+                        {teamMembers.map((member) => (
+                            <li
+                                key={member.id}
+                                className="card"
+                                style={{ '--nth-child': member.id }}
+                                onMouseEnter={() => setHoveredTeam(member)}
+                                onMouseLeave={() => setHoveredTeam(null)}
+                            >
+                                <a
+                                    href={member.link}
+                                    className="avatar-link-wrapper"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <div className="visual circle-container">
+                                        <img
+                                            className="avatar-img centered"
+                                            src={member.image}
+                                            width="144"
+                                            height="144"
+                                            alt={member.name}
+                                        />
                                     </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li className="card" style={{ '--nth-child': 2 }}>
-                            <a href="#" className="avatar-link-wrapper">
-                                <div className="visual">
-                                    <img
-                                        className="avatar-img"
-                                        src="https://raw.githubusercontent.com/mobalti/modern-web-ui/refs/heads/main/css-trig-functions/images/img-2.avif"
-                                        width="144"
-                                        height="144"
-                                        alt="Ava L., UI/UX Designer"
-                                    />
-                                </div>
-                                <div className="tooltiptext">
-                                    <h3 className="team-name">Ava L.</h3>
-                                    <div className="team-content-wrapper">
-                                        <p className="team-title">UI/UX Designer</p>
-                                        <p className="team-bio">
-                                            Turning ideas into stunning designs, one pixel at a time.
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li className="card" style={{ '--nth-child': 3 }}>
-                            <a href="#" className="avatar-link-wrapper">
-                                <div className="visual">
-                                    <img
-                                        className="avatar-img"
-                                        src="https://raw.githubusercontent.com/mobalti/modern-web-ui/refs/heads/main/css-trig-functions/images/img-3.avif"
-                                        width="144"
-                                        height="144"
-                                        alt="Liam J., Mobile Developer"
-                                    />
-                                </div>
-                                <div className="tooltiptext">
-                                    <h3 className="team-name">Liam J.</h3>
-                                    <div className="team-content-wrapper">
-                                        <p className="team-title">Mobile Developer</p>
-                                        <p className="team-bio">
-                                            Crafting sleek, intuitive apps for users on the go.
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li className="card" style={{ '--nth-child': 4 }}>
-                            <a href="#" className="avatar-link-wrapper">
-                                <div className="visual">
-                                    <img
-                                        className="avatar-img"
-                                        src="https://raw.githubusercontent.com/mobalti/modern-web-ui/refs/heads/main/css-trig-functions/images/img-4.avif"
-                                        width="144"
-                                        height="144"
-                                        alt="Sophia K., Data Scientist"
-                                    />
-                                </div>
-                                <div className="tooltiptext">
-                                    <h3 className="team-name">Sophia K.</h3>
-                                    <div className="team-content-wrapper">
-                                        <p className="team-title">Data Scientist</p>
-                                        <p className="team-bio">
-                                            Decoding patterns and finding insights in the chaos.
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li className="card" style={{ '--nth-child': 5 }}>
-                            <a href="#" className="avatar-link-wrapper">
-                                <div className="visual">
-                                    <img
-                                        className="avatar-img"
-                                        src="https://raw.githubusercontent.com/mobalti/modern-web-ui/refs/heads/main/css-trig-functions/images/img-5.avif"
-                                        width="144"
-                                        height="144"
-                                        alt="Codey X, AI Code Assistant"
-                                    />
-                                </div>
-                                <div className="tooltiptext">
-                                    <h3 className="team-name">Codey X</h3>
-                                    <div className="team-content-wrapper">
-                                        <p className="team-title">AI Code Assistant</p>
-                                        <p className="team-bio">
-                                            Powered by algorithms, driven by collaboration.
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li className="card" style={{ '--nth-child': 6 }}>
-                            <a href="#" className="avatar-link-wrapper">
-                                <div className="visual">
-                                    <img
-                                        className="avatar-img"
-                                        src="https://raw.githubusercontent.com/mobalti/modern-web-ui/refs/heads/main/css-trig-functions/images/img-6.avif"
-                                        width="144"
-                                        height="144"
-                                        alt="Maya R., Project Manager"
-                                    />
-                                </div>
-                                <div className="tooltiptext">
-                                    <h3 className="team-name">Maya R.</h3>
-                                    <div className="team-content-wrapper">
-                                        <p className="team-title">Project Manager</p>
-                                        <p className="team-bio">
-                                            Keeping the team in sync and deadlines on track.
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
+                                </a>
+                            </li>
+                        ))}
                     </ul>
+                    {/* Display hovered team info below the cards */}
+                    {hoveredTeam && (
+                        <div className="hover-info">
+                            <h3 className="team-name">{hoveredTeam.name}</h3>
+                            <p className="team-title">{hoveredTeam.title}</p>
+                            <p className="team-bio">{hoveredTeam.bio}</p>
+                        </div>
+                    )}
                 </div>
             </section>
             <Footer />

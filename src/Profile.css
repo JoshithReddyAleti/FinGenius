@@ -1,0 +1,106 @@
+/* src/Profile.css */
+.profile-container {
+  padding: 40px;
+  background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+  min-height: 100vh;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.profile-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.user-details {
+  flex: 1;
+  max-width: 400px;
+  margin: 20px;
+  font-size: 1.2rem;
+}
+
+/* Credit Card Styling */
+.credit-card {
+  position: relative;
+  width: 320px;
+  height: 200px;
+  background: #2c3e50;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Courier New", Courier, monospace;
+  margin: 20px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-chip {
+  font-size: 1.5rem;
+}
+
+.card-number {
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.card-expiration span:first-child {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.card-holder {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: right;
+}
+
+.feedback-button {
+  display: block;
+  margin: 30px auto;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  background: #c23cde;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+  transition: background 0.3s;
+}
+
+.feedback-button:hover {
+  background: #a82bc5;
+}
+
+.loading {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 50px;
+}

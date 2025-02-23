@@ -1,0 +1,18 @@
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent; /* leave transparent if you just want the SVG */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none; /* so that the overlay doesn’t block clicks if needed */
+  z-index: 9999;
+}
+
+.loader-svg {
+  width: 200px;
+  height: 200px;
+}

@@ -1,23 +1,23 @@
 // src/App.js
-import React, { useState, useEffect } from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 
-import LoginPage from './LoginPage';
-import RegisterPage from './RegisterPage';
-import Dashboard from './Dashboard';
-import SavingsPlan from './SavingsPlan';
+import LoginPage from "./LoginPage";
+import RegisterPage from "./RegisterPage";
+import Dashboard from "./Dashboard";
+import SavingsPlan from "./SavingsPlan";
 // Removed LocationSpending import
-import PreApprovedLoan from './PreApprovedLoan';
-import MerchantSpending from './MerchantSpending';
-import PayTransfer from './PayTransfer';
-import Profile from './Profile';
-import OurTeam from './OurTeam';
+import PreApprovedLoan from "./PreApprovedLoan";
+import MerchantSpending from "./MerchantSpending";
+import PayTransfer from "./PayTransfer";
+import Profile from "./Profile";
+import OurTeam from "./OurTeam";
 
-import SettingsPage from './SettingsPage';
-import ChatbotPage from './ChatbotPage';
-import ManageCards from './ManageCards';
+import SettingsPage from "./settingsPage";
+import ChatbotPage from "./ChatbotPage";
+import ManageCards from "./ManageCards";
 
-import Loader from './Loader';
+import Loader from "./Loader";
 
 function App() {
   const location = useLocation();
@@ -66,4 +66,3 @@ function App() {
 }
 
 export default App;
-
