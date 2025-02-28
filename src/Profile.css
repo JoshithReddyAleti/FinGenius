@@ -1,106 +1,338 @@
-/* src/Profile.css */
+/* -------------------------- */
+/* Profile Container & General */
+/* -------------------------- */
+
 .profile-container {
-  padding: 40px;
-  background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+  padding: 2rem;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
   min-height: 100vh;
-  color: #fff;
-  font-family: Arial, sans-serif;
+  color: #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
 .profile-container h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 1rem 0;
   text-align: center;
-  margin-bottom: 30px;
+  position: relative;
 }
 
+.profile-container h1::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: #9f7aea;
+  border-radius: 2px;
+}
+
+/* -------------------------- */
+/* Profile Information Section */
+/* -------------------------- */
+
 .profile-info {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  background: rgba(26, 32, 44, 0.9);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
 }
 
 .user-details {
-  flex: 1;
-  max-width: 400px;
-  margin: 20px;
-  font-size: 1.2rem;
-}
-
-/* Credit Card Styling */
-.credit-card {
-  position: relative;
-  width: 320px;
-  height: 200px;
-  background: #2c3e50;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  padding: 20px;
-  color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  font-family: "Courier New", Courier, monospace;
-  margin: 20px;
+  gap: 1rem;
+}
+
+.user-details p {
+  font-size: 1.1rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  background: rgba(44, 82, 130, 0.3);
+  border: 1px solid rgba(159, 122, 234, 0.2);
+  transition: all 0.3s ease;
+}
+
+.user-details p:hover {
+  background: rgba(159, 122, 234, 0.15);
+  transform: translateX(5px);
+}
+
+.user-details p strong {
+  color: #9f7aea;
+  margin-right: 0.5rem;
+}
+
+.card-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* -------------------------- */
+/* Virtual Credit Card Styles */
+/* -------------------------- */
+
+.credit-card {
+  background: linear-gradient(135deg, #6b46c1, #4c1d95);
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 8px 32px rgba(159, 122, 234, 0.3);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.credit-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  z-index: 1;
+}
+
+.credit-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 12px 40px rgba(159, 122, 234, 0.4);
 }
 
 .card-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 .card-title {
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
 .card-chip {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  transform: rotate(-45deg);
 }
 
 .card-number {
-  font-size: 1.4rem;
-  letter-spacing: 2px;
-  margin-bottom: 10px;
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .card-details {
   display: flex;
   justify-content: space-between;
-  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.card-expiration {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
 .card-expiration span:first-child {
-  font-weight: bold;
-  margin-right: 5px;
+  font-size: 0.8rem;
+  opacity: 0.8;
 }
 
 .card-holder {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  text-align: right;
 }
 
-.feedback-button {
-  display: block;
-  margin: 30px auto;
-  padding: 12px 24px;
-  font-size: 1.1rem;
-  background: #c23cde;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
+/* -------------------------- */
+/* Credit Card Suggestions    */
+/* -------------------------- */
+
+.credit-suggestions {
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem;
+  background: rgba(26, 32, 44, 0.9);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.credit-suggestions h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
   color: #fff;
-  transition: background 0.3s;
+  position: relative;
+}
+
+.credit-suggestions h2::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 3px;
+  background: #9f7aea;
+  border-radius: 2px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.suggestion-card {
+  position: relative;
+  background: rgba(44, 82, 130, 0.3);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(159, 122, 234, 0.2);
+}
+
+.suggestion-card h3 {
+  color: #9f7aea;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.suggestion-card p {
+  margin: 0.5rem 0;
+  color: #e2e8f0;
+}
+
+.suggestion-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(159, 122, 234, 0.2);
+}
+
+.card-tooltip {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+  background: rgba(26, 32, 44, 0.95);
+  color: #e2e8f0;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.suggestion-card:hover .card-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(10px);
+}
+
+/* -------------------------- */
+/* Feedback Button */
+/* -------------------------- */
+
+.feedback-button {
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #9f7aea, #6b46c1);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(159, 122, 234, 0.3);
 }
 
 .feedback-button:hover {
-  background: #a82bc5;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(159, 122, 234, 0.4);
+  background: linear-gradient(135deg, #b794f4, #805ad5);
 }
 
-.loading {
-  font-size: 1.5rem;
-  text-align: center;
-  margin-top: 50px;
+.feedback-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 8px rgba(159, 122, 234, 0.3);
+}
+
+/* -------------------------- */
+/* Responsive Design */
+/* -------------------------- */
+
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 1rem;
+  }
+
+  .profile-info {
+    padding: 1.5rem;
+  }
+
+  .credit-card {
+    padding: 1.25rem;
+  }
+
+  .card-number {
+    font-size: 1.25rem;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .suggestion-card {
+    margin: 0.5rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-container h1 {
+    font-size: 2rem;
+  }
+
+  .user-details p {
+    font-size: 1rem;
+  }
+
+  .credit-card {
+    padding: 1rem;
+  }
+
+  .card-number {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+  }
 }
