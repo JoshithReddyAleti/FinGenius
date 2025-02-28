@@ -1,4 +1,3 @@
-// src/Dashboard.js
 import React, { useState, useEffect } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import Footer from './Footer';
@@ -10,24 +9,29 @@ import merchantImg from './assets/merchant.png';
 import SavingsImg from './assets/savings.png';
 
 function Dashboard() {
-    // Get userName from router state, defaulting to 'User'
     const location = useLocation();
     const locationUserName = location.state?.userName || 'User';
-
-    // Use state for userName (with possible override from localStorage)
     const [userName, setUserName] = useState(locationUserName);
     const [activeFeature, setActiveFeature] = useState(null);
     const [showWelcomeModal, setShowWelcomeModal] = useState(true);
+    const [currentTime, setCurrentTime] = useState(new Date());
 
     useEffect(() => {
-        // Check localStorage for stored userName and update state if found
         const storedUserName = localStorage.getItem("userName");
         if (storedUserName) {
             setUserName(storedUserName);
         }
-        // Show welcome modal for 3 seconds
+
         const timer = setTimeout(() => setShowWelcomeModal(false), 3000);
-        return () => clearTimeout(timer);
+
+        const clockInterval = setInterval(() => {
+            setCurrentTime(new Date());
+        }, 1000);
+
+        return () => {
+            clearTimeout(timer);
+            clearInterval(clockInterval);
+        };
     }, []);
 
     const features = [
@@ -58,28 +62,47 @@ function Dashboard() {
     ];
 
     return (
-        <>
+        <div className="dashboard-wrapper">
             <Header />
             <div className="dashboard-container">
                 {showWelcomeModal && (
                     <div className="welcome-modal">
-                        <h2>Welcome back, {userName}!</h2>
-                        <p>We've got some exciting updates for you.</p>
+                        <div className="modal-content">
+                            <div className="welcome-icon">👋</div>
+                            <h2>Welcome back, {userName}!</h2>
+                            <p>We've got some exciting updates for you.</p>
+                            <div className="pulse-effect"></div>
+                        </div>
                     </div>
                 )}
 
-                {/* Hero / Welcome Section */}
                 <section className="hero-section">
                     <div className="hero-content">
-                        <h1>Your Financial Hub, {userName}</h1>
-                        <p>Discover insights and opportunities tailored just for you.</p>
-                        <button onClick={() => document.querySelector(".features-section").scrollIntoView({ behavior: "smooth" })}>
-                            Explore Now
-                        </button>
+                        <div className="time-display">
+                            {currentTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+                        </div>
+                        <h1>Welcome Back, {userName}</h1>
+                        <p className="subtitle">Your financial journey continues here</p>
+                        <div className="hero-stats">
+                            <div className="stat-card">
+                                <span className="stat-icon">💰</span>
+                                <h3>Total Balance</h3>
+                                <p>$12,450.00</p>
+                            </div>
+                            <div className="stat-card">
+                                <span className="stat-icon">📊</span>
+                                <h3>Monthly Savings</h3>
+                                <p>$2,850.00</p>
+                            </div>
+                            <div className="stat-card">
+                                <span className="stat-icon">🎯</span>
+                                <h3>Goals Progress</h3>
+                                <p>75%</p>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
-                {/* Features Section */}
                 <section className="features-section">
                     <h2>Unlock Your Financial Potential</h2>
                     <div className="features-flex">
@@ -103,7 +126,6 @@ function Dashboard() {
                     </div>
                 </section>
 
-                {/* Quick Actions Section */}
                 <section className="quick-actions">
                     <h2>Quick Actions</h2>
                     <div className="action-buttons">
@@ -113,14 +135,10 @@ function Dashboard() {
                         <button>Contact Support</button>
                     </div>
                 </section>
-
-                <Footer />
             </div>
-        </>
+            <Footer />
+        </div>
     );
 }
-
-export default Dashboard;
-
 
 export default Dashboard;
