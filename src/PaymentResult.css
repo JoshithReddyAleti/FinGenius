@@ -1,0 +1,47 @@
+/* src/PaymentResults.css */
+.payment-results-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f5f5f5;
+  text-align: center;
+  padding: 20px;
+}
+
+.result-success,
+.result-failure {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.result-success .icon {
+  font-size: 80px;
+  color: #4caf50;
+}
+
+.result-failure .icon {
+  font-size: 80px;
+  color: #f44336;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background: #c23cde;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #a82bc5;
+}
