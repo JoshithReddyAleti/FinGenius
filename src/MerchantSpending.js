@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from "recharts";
+import './MerchantSpending.css'; // Make sure to import the CSS file
 
 const MerchantSpending = () => {
   const [categoryData, setCategoryData] = useState([]);
@@ -59,69 +60,78 @@ const MerchantSpending = () => {
   };
 
   return (
-    <div>
-      <h1>Interactive Merchant Spending Report</h1>
+    <div className="background">
+      <div className="merchant-spending-container">
+        <h1>Interactive Merchant Spending Report</h1>
 
-      {/* Category Pie Chart */}
-      <ResponsiveContainer width="100%" height={400}>
-        <PieChart>
-          <Pie
-            data={categoryData}
-            dataKey="Amount"
-            nameKey="Category"
-            innerRadius="40%"
-            outerRadius="80%"
-            fill="#8884d8"
-            onClick={handleCategoryClick}
-            labelLine={false}
-            label={({ percent }) => `${(percent * 100).toFixed(2)}%`} // Showing percentage on the chart
-            activeShape={null} // Disable active shape outline when clicked
-            // Custom hover styles
-            isAnimationActive={false}
-          >
-            {categoryData.map((entry, index) => (
-              <Cell
-                key={`cell-${index}`}
-                fill={colors[index % colors.length]}
-                // Inline styles to disable hover and focus effects
-                style={{ outline: "none", border: "none", boxShadow: "none" }}
-              />
-            ))}
-          </Pie>
-          <Tooltip />
-        </PieChart>
-      </ResponsiveContainer>
+        {/* Introduction text */}
+        <div className="intro-text">
+          This interactive report visualizes the merchant spending data. The pie chart
+          shows the distribution of spending across various categories. Clicking on a
+          category will reveal a breakdown of spending by subcategory.
+        </div>
 
-      {/* Subcategory Pie Chart */}
-      {selectedCategory && (
-        <ResponsiveContainer width="100%" height={400}>
-          <PieChart>
-            <Pie
-              data={subcategoryData}
-              dataKey="Amount"
-              nameKey="Name"
-              innerRadius="40%"
-              outerRadius="80%"
-              fill="#82ca9d"
-              labelLine={false}
-              label={({ percent }) => `${(percent * 100).toFixed(2)}%`} // Showing percentage on the subcategory chart
-              activeShape={null} // Disable active shape outline when clicked
-              // Custom hover styles
-              isAnimationActive={false}
-            >
-              {subcategoryData.map((entry, index) => (
-                <Cell
-                  key={`cell-${index}`}
-                  fill={colors[index % colors.length]}
-                  // Inline styles to disable hover and focus effects
-                  style={{ outline: "none", border: "none", boxShadow: "none" }}
-                />
-              ))}
-            </Pie>
-            <Tooltip />
-          </PieChart>
-        </ResponsiveContainer>
-      )}
+        {/* Category Pie Chart */}
+        <div className="pie-chart-container">
+          <ResponsiveContainer width="100%" height={400}>
+            <PieChart>
+              <Pie
+                data={categoryData}
+                dataKey="Amount"
+                nameKey="Category"
+                innerRadius="40%"
+                outerRadius="80%"
+                fill="#8884d8"
+                onClick={handleCategoryClick}
+                labelLine={false}
+                label={({ percent }) => `${(percent * 100).toFixed(2)}%`} // Showing percentage on the chart
+                activeShape={null} // Disable active shape outline when clicked
+                isAnimationActive={false}
+              >
+                {categoryData.map((entry, index) => (
+                  <Cell
+                    key={`cell-${index}`}
+                    fill={colors[index % colors.length]}
+                    style={{ outline: "none", border: "none", boxShadow: "none" }}
+                  />
+                ))}
+              </Pie>
+              <Tooltip />
+            </PieChart>
+          </ResponsiveContainer>
+        </div>
+
+        {/* Subcategory Pie Chart */}
+        {selectedCategory && (
+          <div className="pie-chart-container">
+            <ResponsiveContainer width="100%" height={400}>
+              <PieChart>
+                <Pie
+                  data={subcategoryData}
+                  dataKey="Amount"
+                  nameKey="Name"
+                  innerRadius="40%"
+                  outerRadius="80%"
+                  fill="#82ca9d"
+                  labelLine={false}
+                  label={({ percent }) => `${(percent * 100).toFixed(2)}%`} // Showing percentage on the subcategory chart
+                  activeShape={null} // Disable active shape outline when clicked
+                  isAnimationActive={false}
+                >
+                  {subcategoryData.map((entry, index) => (
+                    <Cell
+                      key={`cell-${index}`}
+                      fill={colors[index % colors.length]}
+                      style={{ outline: "none", border: "none", boxShadow: "none" }}
+                    />
+                  ))}
+                </Pie>
+                <Tooltip />
+              </PieChart>
+            </ResponsiveContainer>
+          </div>
+        )}
+      </div>
     </div>
   );
 };
