@@ -1,0 +1,138 @@
+/* General Container */
+.location-spending-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background: rgba(44, 82, 130, 0.3);
+  border: 1px solid rgba(159, 122, 234, 0.2);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for main container */
+.location-spending-container:hover {
+  transform: scale(1.02);
+}
+
+/* Title */
+.location-spending-container h1 {
+  font-size: 2rem;
+  color: #2c5282;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+/* Pie Chart Section */
+.pie-chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Pie Chart Hover Effect */
+.pie-chart-container:hover {
+  transform: scale(1.05);
+}
+
+/* Selected State Container */
+.selected-state-container {
+  margin-top: 30px;
+  padding: 15px;
+  background: darkturquoise;
+  border: 1px solid rgba(159, 122, 234, 0.2);
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.selected-state-container:hover {
+  background: rgba(144, 172, 206, 0.4);
+}
+
+/* Category Charts Container */
+.category-charts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Individual Chart Box */
+.chart-box {
+  flex: 1 1 45%;
+  min-width: 300px;
+  padding: 15px;
+  background: rgba(227, 10, 10, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(98, 240, 9, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for charts */
+.chart-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(66, 232, 10, 0.2);
+  text-decoration-color: aliceblue;
+}
+
+/* Tooltip Styling */
+.recharts-tooltip-wrapper {
+  background: rgb(14, 0, 209);
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .category-charts-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chart-box {
+    width: 90%;
+  }
+}
+.background {
+  background: linear-gradient(to right, #4c51bf, #805ad5);
+  padding: 20px;
+  color: #4c51bf;
+  border-radius: 10px;
+}
+.user-details p:hover {
+  background: rgba(159, 122, 234, 0.15);
+  transform: translateX(5px);
+  color: #fff; /* Change text color to white */
+}
+
+.suggestion-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(159, 122, 234, 0.2);
+  color: #fff; /* Change text color to white */
+}
+.report-link {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #4c1d95, #6b46c1);
+  color: #e2e8f0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(159, 122, 234, 0.3);
+  text-align: center;
+}
+
+.report-link:hover {
+  background: linear-gradient(135deg, #6b46c1, #9f7aea);
+  color: #fff; /* Change text color to white */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(159, 122, 234, 0.4);
+}
