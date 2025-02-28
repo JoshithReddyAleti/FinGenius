@@ -1,58 +1,77 @@
-// src/Feedback.js
 import React, { useState } from 'react';
-import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 import './Feedback.css';
 
 function Feedback() {
-    const [feedback, setFeedback] = useState('');
-    const [suggestions, setSuggestions] = useState('');
+    const navigate = useNavigate();
+    const [experience, setExperience] = useState('');
+    const [feasibility, setFeasibility] = useState('');
+    const [otherComments, setOtherComments] = useState('');
     const [submitted, setSubmitted] = useState(false);
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
-        try {
-            // Send feedback to backend (adjust the URL as needed)
-            await axios.post('https://api.example.com/api/feedback', { feedback, suggestions });
-            setSubmitted(true);
-        } catch (error) {
-            console.error('Error submitting feedback:', error);
-        }
+        // (Optional) Here you could also send the feedback data to your backend.
+        setSubmitted(true);
+        // After 3 seconds, redirect back to the profile page (or another page)
+        setTimeout(() => {
+            navigate('/profile');
+        }, 3000);
     };
-
-    if (submitted) {
-        return (
-            <div className="feedback-container">
-                <h1>Thank you for your feedback!</h1>
-            </div>
-        );
-    }
 
     return (
         <div className="feedback-container">
-            <h1>Feedback</h1>
-            <form onSubmit={handleSubmit} className="feedback-form">
-                <div className="form-group">
-                    <label>Overall, how satisfied are you with our service?</label>
-                    <textarea
-                        value={feedback}
-                        onChange={(e) => setFeedback(e.target.value)}
-                        required
-                        placeholder="Your feedback..."
-                    />
+            <h1>User Feedback</h1>
+            {submitted ? (
+                <div className="feedback-success">
+                    <div className="success-icon">✓</div>
+                    <h2>Thank you for your feedback!</h2>
+                    <p>We appreciate your input and will work on improvements.</p>
                 </div>
-                <div className="form-group">
-                    <label>Suggestions for improvements:</label>
-                    <textarea
-                        value={suggestions}
-                        onChange={(e) => setSuggestions(e.target.value)}
-                        required
-                        placeholder="Your suggestions..."
-                    />
-                </div>
-                <button type="submit" className="submit-button">
-                    Submit Feedback
-                </button>
-            </form>
+            ) : (
+                <form onSubmit={handleSubmit} className="feedback-form">
+                    <div className="form-group">
+                        <label>How would you rate your overall experience with our website?</label>
+                        <select
+                            value={experience}
+                            onChange={(e) => setExperience(e.target.value)}
+                            required
+                        >
+                            <option value="">Select a rating</option>
+                            <option value="excellent">Excellent</option>
+                            <option value="good">Good</option>
+                            <option value="average">Average</option>
+                            <option value="poor">Poor</option>
+                        </select>
+                    </div>
+                    <div className="form-group">
+                        <label>How user-friendly and feasible do you find our website?</label>
+                        <select
+                            value={feasibility}
+                            onChange={(e) => setFeasibility(e.target.value)}
+                            required
+                        >
+                            <option value="">Select an option</option>
+                            <option value="very_feasible">Very Feasible</option>
+                            <option value="feasible">Feasible</option>
+                            <option value="neutral">Neutral</option>
+                            <option value="not_feasible">Not Feasible</option>
+                        </select>
+                    </div>
+                    <div className="form-group">
+                        <label>Additional Comments or Suggestions:</label>
+                        <textarea
+                            value={otherComments}
+                            onChange={(e) => setOtherComments(e.target.value)}
+                            placeholder="Enter your comments here..."
+                            rows="4"
+                        ></textarea>
+                    </div>
+                    <button type="submit" className="submit-button">
+                        Submit Feedback
+                    </button>
+                </form>
+            )}
         </div>
     );
 }
