@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# **FinGenius 💰🚀**
+### **Revolutionizing Finance with AI & Predictive Intelligence**  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+FinGenius is a **next-gen financial platform** that transforms how users **transfer, analyze, and optimize** their money while ensuring **top-notch security, AI-driven insights, and predictive intelligence**. By leveraging cutting-edge technologies, FinGenius provides an all-in-one solution for **seamless transactions, personalized financial analytics, and AI-powered financial planning**.  
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## **🌟 Key Features**  
 
-### `npm start`
+### **1️⃣ Seamless Global Transactions**  
+✅ **Integrated with Razorpay & Stripe** for **secure, direct** international transfers.  
+✅ Eliminates reliance on **third-party platforms**, reducing transaction costs and **minimizing data leak risks**.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### **2️⃣ AI-Powered Financial Chatbot 🤖**  
+✅ Uses **OpenAI’s API** with **Retrieval-Augmented Generation (RAG)** to deliver **real-time**, **personalized financial insights**.  
+✅ Provides guidance on **budgeting, investments, and expense tracking** without limitations.  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### **3️⃣ Advanced Spending Analysis & Visualization 📊**  
+✅ Tracks **spending behavior** based on **location, merchant, and transaction frequency**.  
+✅ Offers **interactive charts & data visualizations** to help users manage their expenses effectively.  
 
-### `npm test`
+### **4️⃣ AI-Driven Savings Predictor 💡**  
+✅ Uses **LLMs (Large Language Models)** and **transaction history** to predict **savings patterns**.  
+✅ Detects **financial risks & anomalies**, helping users make smarter financial decisions.  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### **5️⃣ Security & Fraud Detection 🔒**  
+✅ **Multi-layered security mechanisms** to safeguard transactions.  
+✅ AI-powered **fraud detection** to identify suspicious activities.  
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## **🛠️ Tech Stack**  
+- **Frontend:** React.js, Tailwind CSS, Recharts (for data visualization)  
+- **Backend:** FastAPI, Flask, PostgreSQL, AWS  
+- **AI/ML:** OpenAI API (Chatbot & Predictive Analysis), RAG (Retrieval-Augmented Generation)  
+- **Payments:** Razorpay, Stripe API  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## **🚀 Getting Started**  
 
-### `npm run eject`
+### **1️⃣ Prerequisites**  
+Ensure you have the following installed:  
+- **Python 3.8+**  
+- **Node.js & npm**  
+- **Git**  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### **2️⃣ Clone the Repository**  
+```sh
+git clone https://github.com/JoshithReddyAleti/FinGenius.git
+cd FinGenius
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### **3️⃣ Setup Backend (Virtual Environment Required)**  
+```sh
+cd backend
+python -m venv venv
+source venv/bin/activate  # For Mac/Linux
+venv\Scripts\activate  # For Windows
+pip install -r requirements.txt
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### **4️⃣ Setup Frontend**  
+```sh
+cd frontend
+npm install
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## **⚠️ Disclaimer: Best Results Require API Keys**  
+To achieve full functionality, you **must use your own API keys** for:  
+🔹 **OpenAI API** (Chatbot & AI features)  
+🔹 **AWS** (For secure data processing & storage)  
+🔹 **Razorpay/Stripe** (For transactions)  
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**How to set API keys:**  
+1. Create a `.env` file in both `frontend` and `backend` folders.  
+2. Add your API keys:  
+   ```
+   OPENAI_API_KEY=your_openai_key
+   AWS_ACCESS_KEY=your_aws_key
+   STRIPE_API_KEY=your_stripe_key
+   ```
+3. Restart the project after setting the keys.  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## **📌 Roadmap & Future Enhancements**  
+✅ **Mobile App** – Build a React Native app for seamless cross-platform access.  
+✅ **AI-Powered Investment Advisor** – Provide personalized stock & crypto investment suggestions.  
+✅ **Multi-Currency Support** – Enable real-time currency conversions for global users.  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
