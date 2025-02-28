@@ -1,0 +1,169 @@
+/* src/SavingsPlan.css */
+
+/* Fullscreen Gradient Background */
+.savings-plan-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1a1a2e, #a82bc5);
+  color: black;
+  padding: 50px 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Smooth Fade-in for all content */
+.savings-plan-container > * {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Typing Effect for Main Heading */
+.typing-effect {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #fff, #f0f0f0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid white;
+  width: 0;
+  animation: typing 3s steps(40, end) forwards, blink 0.7s infinite;
+}
+
+/* Animated Card Container */
+.savings-info {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 30px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  animation: fadeInUp 1s ease 0.5s forwards;
+  opacity: 0;
+}
+
+/* Spending Breakdown Section */
+.spending-breakdown {
+  margin-top: 20px;
+  text-align: left;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.spending-breakdown ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.spending-item {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+  font-size: 1rem;
+  animation: fadeInUp 1s ease 0.7s forwards;
+  opacity: 0;
+}
+
+/* Savings Report Section */
+.savings-report-header {
+  font-size: 1.8rem;
+  margin-top: 30px;
+  animation: fadeInUp 1s ease 1s forwards;
+  opacity: 0;
+}
+
+.savings-report {
+  font-size: 1.2rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+  animation: fadeInUp 1s ease 1.2s forwards;
+  opacity: 0;
+  color: black;
+  text-decoration-color: black;
+}
+
+/* Loading Message */
+.loading-message {
+  font-size: 1.5rem;
+  color: white;
+  animation: pulse 1.5s infinite alternate;
+}
+
+/* Error Message */
+.error-message {
+  font-size: 1.5rem;
+  color: red;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Keyframes for Smooth Entrance */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Keyframes for Typing Effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Blinking Cursor Effect */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Pulsing Effect for Loading */
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .typing-effect {
+    font-size: 2rem;
+  }
+  .savings-info,
+  .savings-report {
+    width: 90%;
+  }
+}
+.savings-report {
+  color: black;
+}
